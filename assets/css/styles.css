@@ -1,0 +1,350 @@
+/* Объединенные стили для веб-интерфейса network_installation */
+
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для таблиц DataTables */
+table.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.dataTable th, table.dataTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table.dataTable th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+table.dataTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Стили для Select2 */
+.select2-container {
+    width: 100% !important;
+    margin-bottom: 10px;
+}
+
+.select2-selection {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+/* Стили для форм */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Стили для модальных окон */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+/* Стили для кнопок */
+button, .btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-primary {
+    background-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+}
+
+.btn-secondary:hover {
+    background-color: #5c636a;
+    color: white;
+}
+
+.btn-info {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-info:hover {
+    background-color: #0c8599;
+    color: white;
+}
+
+.btn-warning {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+.btn-danger {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    color: white;
+}
+
+/* Стили для уведомлений */
+.notification {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.notification.error {
+    background-color: #e74c3c;
+}
+
+/* Стили для графиков */
+.chart-container {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для vis-network */
+#network {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Стили для PDF-предпросмотра */
+#pdf-preview {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Стили для навигационной панели */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+.nav-link.dropdown-toggle {
+    color: white !important;
+    transition: background-color 0.2s;
+}
+
+.nav-link.dropdown-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef;
+    color: #0d6efd;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+.badge {
+    font-size: 0.75rem;
+}
+
+/* Стили для боковой панели */
+@media (min-width: 992px) {
+    #sidebarOffcanvas {
+        display: block !important;
+        transform: none !important;
+        visibility: visible !important;
+        width: 250px !important;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+}
+
+.nav-link {
+    padding: 0.75rem 1rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: white !important;
+}
+
+.accordion-button {
+    font-size: 1rem;
+    color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.offcanvas {
+    background-color: #f8f9fa !important;
+}
+
+.offcanvas-body {
+    padding: 0;
+}
+
+/* Стили для главной панели управления, задач, уведомлений, создания и редактирования задач */
+.main-content {
+    padding-top: 1rem;
+}
+
+@media (min-width: 992px) {
+    .main-content {
+        margin-left: 250px;
+        padding-left: 20px;
+    }
+}
+
+.table-striped tr {
+    transition: background-color 0.2s;
+}
+
+.table-striped tr:hover {
+    background-color: #e9ecef;
+}
+
+.table-danger {
+    background-color: #f8d7da !important;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.card {
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control, .form-select {
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+}
